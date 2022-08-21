@@ -1,10 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import ItemListContainer from './Containers/ItemListContainer';
+import NavBar from './Componentes/NavBar';
+import ItemDeteailContainer from './Containers/ItemDeteailContainer';
 
 function App() {
   return (
     <div>
-      <h1>Tus Bebidas</h1>
+      <NavBar/>
+      <ItemListContainer/>
+      <ItemDeteailContainer/>
     </div>
   );
 }

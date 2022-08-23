@@ -1,9 +1,10 @@
 import { useState } from "react"
 import React from 'react'
+import './Diseños/Card.css'
 
-const ItemCount = ({initial, stock }) => {
+const ItemCount = ({stock=5, onAdd }) => {
 
-const [counter, setCounter] = useState (initial)
+const [counter, setCounter] = useState (1)
 
 const subtract = () =>{
   if(counter > initial){
@@ -17,12 +18,19 @@ const add = () => {
   }
 }
 
+const AgregarCantidad = () => {
+  onAdd(counter);
+};
+
   return (
-    <div>
+    <>
+    <div className='Buttons'>
         <button onClick={subtract}> - </button>
         <p> {counter} </p>
         <button onClick={add}> + </button>
     </div>
+    <button onClick={AgregarCantidad}>AGREGAR AL CARRITO</button>
+    </>
   )
 }
 

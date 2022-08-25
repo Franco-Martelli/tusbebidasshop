@@ -7,7 +7,7 @@ const ItemCount = ({stock=5, onAdd }) => {
 const [counter, setCounter] = useState (1)
 
 const subtract = () =>{
-  if(counter > initial){
+  if(counter > 1){
     setCounter(counter -1)
   }
 }

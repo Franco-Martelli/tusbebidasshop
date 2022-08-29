@@ -10,8 +10,8 @@ const ItemDetailContainer = () => {
         CustomFetch(2000, Productos[8])
         .then(result => setProducts(result))
         .catch(err => console.log(err))
-      }, [Productos])
-  return <ItemDetail prod={products} />;
+      }, [])
+  return <ItemDetail item={products} />;
 };
 
 export default ItemDetailContainer;

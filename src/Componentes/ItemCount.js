@@ -1,6 +1,8 @@
 import { useState } from "react"
 import React from 'react'
 import './Diseños/Card.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const ItemCount = ({stock=5, onAdd }) => {
 
@@ -25,11 +27,11 @@ const AgregarCantidad = () => {
   return (
     <>
     <div className='Buttons'>
-        <button onClick={subtract}> - </button>
-        <p> {counter} </p>
-        <button onClick={add}> + </button>
+        <button className="btn btn-primary" onClick={subtract}> - </button>
+        <p className="counter"> {counter} </p>
+        <button className="btn btn-primary" onClick={add}> + </button>
     </div>
-    <button onClick={AgregarCantidad}>AGREGAR AL CARRITO</button>
+    <button  className="btn btn-primary" style={{height: 39}} onClick={AgregarCantidad}>AGREGAR AL CARRITO</button>
     </>
   )
 }

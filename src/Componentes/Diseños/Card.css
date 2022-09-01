@@ -2,14 +2,10 @@
 
 .ContainerCard{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-top: 20px;
-    margin-bottom: 20px;
-    border-bottom-width: 20px;
-    border-top-width: 20px;
-    align-content: center;
     flex-wrap: wrap;
-   
+    align-items: center;
 }
 
 .Card{
@@ -26,10 +22,17 @@
     text-align: center;
 }
 
-.Buttons{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 10px;
-    margin-bottom: 10px;
+.counter{
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
+.Buttons{
+    display: flex;
+    align-items: flex-start;
+}
+
+.imagen{
+    width: 300px;
+    height: 300px;
+}
